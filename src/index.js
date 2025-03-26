@@ -43,6 +43,7 @@ app.use('/history', require('./routes/history'));
 app.use('/release-build', require('./routes/release-build'));
 app.use('/pr', require('./routes/pr'));
 app.use('/pr-lookup', require('./routes/pr-lookup'));
+app.use('/chromium', require('./routes/chromium'));
 
 app.use(
   express.static(path.resolve(__dirname, 'static'), {
