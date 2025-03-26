@@ -1,0 +1,962 @@
+{
+  "2020-02-03": [
+    {
+      "mstone": 80,
+      "channel": "stable",
+      "version": "80.0.0.0",
+      "date": "2020-02-03"
+    }
+  ],
+  "2019-12-18": [
+    {
+      "mstone": 80,
+      "channel": "beta",
+      "version": "80.0.0.0-beta",
+      "date": "2019-12-18"
+    }
+  ],
+  "2020-04-06": [
+    {
+      "mstone": 81,
+      "channel": "stable",
+      "version": "81.0.0.0",
+      "date": "2020-04-06"
+    }
+  ],
+  "2020-02-12": [
+    {
+      "mstone": 81,
+      "channel": "beta",
+      "version": "81.0.0.0-beta",
+      "date": "2020-02-12"
+    }
+  ],
+  "2020-05-18": [
+    {
+      "mstone": 83,
+      "channel": "stable",
+      "version": "83.0.0.0",
+      "date": "2020-05-18"
+    }
+  ],
+  "2020-04-15": [
+    {
+      "mstone": 83,
+      "channel": "beta",
+      "version": "83.0.0.0-beta",
+      "date": "2020-04-15"
+    }
+  ],
+  "2020-07-13": [
+    {
+      "mstone": 84,
+      "channel": "stable",
+      "version": "84.0.0.0",
+      "date": "2020-07-13"
+    }
+  ],
+  "2020-05-27": [
+    {
+      "mstone": 84,
+      "channel": "beta",
+      "version": "84.0.0.0-beta",
+      "date": "2020-05-27"
+    }
+  ],
+  "2020-08-24": [
+    {
+      "mstone": 85,
+      "channel": "stable",
+      "version": "85.0.0.0",
+      "date": "2020-08-24"
+    }
+  ],
+  "2020-07-22": [
+    {
+      "mstone": 85,
+      "channel": "beta",
+      "version": "85.0.0.0-beta",
+      "date": "2020-07-22"
+    }
+  ],
+  "2020-10-05": [
+    {
+      "mstone": 86,
+      "channel": "stable",
+      "version": "86.0.0.0",
+      "date": "2020-10-05"
+    }
+  ],
+  "2020-09-02": [
+    {
+      "mstone": 86,
+      "channel": "beta",
+      "version": "86.0.0.0-beta",
+      "date": "2020-09-02"
+    }
+  ],
+  "2020-11-16": [
+    {
+      "mstone": 87,
+      "channel": "stable",
+      "version": "87.0.0.0",
+      "date": "2020-11-16"
+    }
+  ],
+  "2020-10-14": [
+    {
+      "mstone": 87,
+      "channel": "beta",
+      "version": "87.0.0.0-beta",
+      "date": "2020-10-14"
+    }
+  ],
+  "2021-01-18": [
+    {
+      "mstone": 88,
+      "channel": "stable",
+      "version": "88.0.0.0",
+      "date": "2021-01-18"
+    }
+  ],
+  "2020-12-02": [
+    {
+      "mstone": 88,
+      "channel": "beta",
+      "version": "88.0.0.0-beta",
+      "date": "2020-12-02"
+    }
+  ],
+  "2021-03-01": [
+    {
+      "mstone": 89,
+      "channel": "stable",
+      "version": "89.0.0.0",
+      "date": "2021-03-01"
+    }
+  ],
+  "2021-01-27": [
+    {
+      "mstone": 89,
+      "channel": "beta",
+      "version": "89.0.0.0-beta",
+      "date": "2021-01-27"
+    }
+  ],
+  "2021-04-12": [
+    {
+      "mstone": 90,
+      "channel": "stable",
+      "version": "90.0.0.0",
+      "date": "2021-04-12"
+    }
+  ],
+  "2021-03-10": [
+    {
+      "mstone": 90,
+      "channel": "beta",
+      "version": "90.0.0.0-beta",
+      "date": "2021-03-10"
+    }
+  ],
+  "2021-05-24": [
+    {
+      "mstone": 91,
+      "channel": "stable",
+      "version": "91.0.0.0",
+      "date": "2021-05-24"
+    }
+  ],
+  "2021-04-21": [
+    {
+      "mstone": 91,
+      "channel": "beta",
+      "version": "91.0.0.0-beta",
+      "date": "2021-04-21"
+    }
+  ],
+  "2021-07-19": [
+    {
+      "mstone": 92,
+      "channel": "stable",
+      "version": "92.0.0.0",
+      "date": "2021-07-19"
+    }
+  ],
+  "2021-06-02": [
+    {
+      "mstone": 92,
+      "channel": "beta",
+      "version": "92.0.0.0-beta",
+      "date": "2021-06-02"
+    }
+  ],
+  "2021-08-30": [
+    {
+      "mstone": 93,
+      "channel": "stable",
+      "version": "93.0.0.0",
+      "date": "2021-08-30"
+    }
+  ],
+  "2021-07-28": [
+    {
+      "mstone": 93,
+      "channel": "beta",
+      "version": "93.0.0.0-beta",
+      "date": "2021-07-28"
+    }
+  ],
+  "2021-09-20": [
+    {
+      "mstone": 94,
+      "channel": "stable",
+      "version": "94.0.0.0",
+      "date": "2021-09-20"
+    }
+  ],
+  "2021-08-25": [
+    {
+      "mstone": 94,
+      "channel": "beta",
+      "version": "94.0.0.0-beta",
+      "date": "2021-08-25"
+    }
+  ],
+  "2021-10-18": [
+    {
+      "mstone": 95,
+      "channel": "stable",
+      "version": "95.0.0.0",
+      "date": "2021-10-18"
+    }
+  ],
+  "2021-09-22": [
+    {
+      "mstone": 95,
+      "channel": "beta",
+      "version": "95.0.0.0-beta",
+      "date": "2021-09-22"
+    }
+  ],
+  "2021-11-15": [
+    {
+      "mstone": 96,
+      "channel": "stable",
+      "version": "96.0.0.0",
+      "date": "2021-11-15"
+    }
+  ],
+  "2021-10-20": [
+    {
+      "mstone": 96,
+      "channel": "beta",
+      "version": "96.0.0.0-beta",
+      "date": "2021-10-20"
+    }
+  ],
+  "2022-01-03": [
+    {
+      "mstone": 97,
+      "channel": "stable",
+      "version": "97.0.0.0",
+      "date": "2022-01-03"
+    }
+  ],
+  "2021-11-17": [
+    {
+      "mstone": 97,
+      "channel": "beta",
+      "version": "97.0.0.0-beta",
+      "date": "2021-11-17"
+    }
+  ],
+  "2022-01-31": [
+    {
+      "mstone": 98,
+      "channel": "stable",
+      "version": "98.0.0.0",
+      "date": "2022-01-31"
+    }
+  ],
+  "2022-01-05": [
+    {
+      "mstone": 98,
+      "channel": "beta",
+      "version": "98.0.0.0-beta",
+      "date": "2022-01-05"
+    }
+  ],
+  "2022-02-28": [
+    {
+      "mstone": 99,
+      "channel": "stable",
+      "version": "99.0.0.0",
+      "date": "2022-02-28"
+    }
+  ],
+  "2022-02-02": [
+    {
+      "mstone": 99,
+      "channel": "beta",
+      "version": "99.0.0.0-beta",
+      "date": "2022-02-02"
+    }
+  ],
+  "2022-03-28": [
+    {
+      "mstone": 100,
+      "channel": "stable",
+      "version": "100.0.0.0",
+      "date": "2022-03-28"
+    }
+  ],
+  "2022-03-02": [
+    {
+      "mstone": 100,
+      "channel": "beta",
+      "version": "100.0.0.0-beta",
+      "date": "2022-03-02"
+    }
+  ],
+  "2022-04-25": [
+    {
+      "mstone": 101,
+      "channel": "stable",
+      "version": "101.0.0.0",
+      "date": "2022-04-25"
+    }
+  ],
+  "2022-03-30": [
+    {
+      "mstone": 101,
+      "channel": "beta",
+      "version": "101.0.0.0-beta",
+      "date": "2022-03-30"
+    }
+  ],
+  "2022-05-23": [
+    {
+      "mstone": 102,
+      "channel": "stable",
+      "version": "102.0.0.0",
+      "date": "2022-05-23"
+    }
+  ],
+  "2022-04-27": [
+    {
+      "mstone": 102,
+      "channel": "beta",
+      "version": "102.0.0.0-beta",
+      "date": "2022-04-27"
+    }
+  ],
+  "2022-06-20": [
+    {
+      "mstone": 103,
+      "channel": "stable",
+      "version": "103.0.0.0",
+      "date": "2022-06-20"
+    }
+  ],
+  "2022-05-25": [
+    {
+      "mstone": 103,
+      "channel": "beta",
+      "version": "103.0.0.0-beta",
+      "date": "2022-05-25"
+    }
+  ],
+  "2022-08-01": [
+    {
+      "mstone": 104,
+      "channel": "stable",
+      "version": "104.0.0.0",
+      "date": "2022-08-01"
+    }
+  ],
+  "2022-06-22": [
+    {
+      "mstone": 104,
+      "channel": "beta",
+      "version": "104.0.0.0-beta",
+      "date": "2022-06-22"
+    }
+  ],
+  "2022-08-29": [
+    {
+      "mstone": 105,
+      "channel": "stable",
+      "version": "105.0.0.0",
+      "date": "2022-08-29"
+    }
+  ],
+  "2022-08-03": [
+    {
+      "mstone": 105,
+      "channel": "beta",
+      "version": "105.0.0.0-beta",
+      "date": "2022-08-03"
+    }
+  ],
+  "2022-09-26": [
+    {
+      "mstone": 106,
+      "channel": "stable",
+      "version": "106.0.0.0",
+      "date": "2022-09-26"
+    }
+  ],
+  "2022-08-31": [
+    {
+      "mstone": 106,
+      "channel": "beta",
+      "version": "106.0.0.0-beta",
+      "date": "2022-08-31"
+    }
+  ],
+  "2022-10-24": [
+    {
+      "mstone": 107,
+      "channel": "stable",
+      "version": "107.0.0.0",
+      "date": "2022-10-24"
+    }
+  ],
+  "2022-09-28": [
+    {
+      "mstone": 107,
+      "channel": "beta",
+      "version": "107.0.0.0-beta",
+      "date": "2022-09-28"
+    }
+  ],
+  "2022-11-28": [
+    {
+      "mstone": 108,
+      "channel": "stable",
+      "version": "108.0.0.0",
+      "date": "2022-11-28"
+    }
+  ],
+  "2022-10-26": [
+    {
+      "mstone": 108,
+      "channel": "beta",
+      "version": "108.0.0.0-beta",
+      "date": "2022-10-26"
+    }
+  ],
+  "2023-01-09": [
+    {
+      "mstone": 109,
+      "channel": "stable",
+      "version": "109.0.0.0",
+      "date": "2023-01-09"
+    }
+  ],
+  "2022-11-30": [
+    {
+      "mstone": 109,
+      "channel": "beta",
+      "version": "109.0.0.0-beta",
+      "date": "2022-11-30"
+    }
+  ],
+  "2023-02-06": [
+    {
+      "mstone": 110,
+      "channel": "stable",
+      "version": "110.0.0.0",
+      "date": "2023-02-06"
+    }
+  ],
+  "2023-01-11": [
+    {
+      "mstone": 110,
+      "channel": "beta",
+      "version": "110.0.0.0-beta",
+      "date": "2023-01-11"
+    }
+  ],
+  "2023-03-06": [
+    {
+      "mstone": 111,
+      "channel": "stable",
+      "version": "111.0.0.0",
+      "date": "2023-03-06"
+    }
+  ],
+  "2023-02-08": [
+    {
+      "mstone": 111,
+      "channel": "beta",
+      "version": "111.0.0.0-beta",
+      "date": "2023-02-08"
+    }
+  ],
+  "2023-04-03": [
+    {
+      "mstone": 112,
+      "channel": "stable",
+      "version": "112.0.0.0",
+      "date": "2023-04-03"
+    }
+  ],
+  "2023-03-08": [
+    {
+      "mstone": 112,
+      "channel": "beta",
+      "version": "112.0.0.0-beta",
+      "date": "2023-03-08"
+    }
+  ],
+  "2023-05-01": [
+    {
+      "mstone": 113,
+      "channel": "stable",
+      "version": "113.0.0.0",
+      "date": "2023-05-01"
+    }
+  ],
+  "2023-04-05": [
+    {
+      "mstone": 113,
+      "channel": "beta",
+      "version": "113.0.0.0-beta",
+      "date": "2023-04-05"
+    }
+  ],
+  "2023-05-29": [
+    {
+      "mstone": 114,
+      "channel": "stable",
+      "version": "114.0.0.0",
+      "date": "2023-05-29"
+    }
+  ],
+  "2023-05-02": [
+    {
+      "mstone": 114,
+      "channel": "beta",
+      "version": "114.0.0.0-beta",
+      "date": "2023-05-02"
+    }
+  ],
+  "2023-07-17": [
+    {
+      "mstone": 115,
+      "channel": "stable",
+      "version": "115.0.0.0",
+      "date": "2023-07-17"
+    }
+  ],
+  "2023-05-30": [
+    {
+      "mstone": 115,
+      "channel": "beta",
+      "version": "115.0.0.0-beta",
+      "date": "2023-05-30"
+    }
+  ],
+  "2023-08-14": [
+    {
+      "mstone": 116,
+      "channel": "stable",
+      "version": "116.0.0.0",
+      "date": "2023-08-14"
+    }
+  ],
+  "2023-07-18": [
+    {
+      "mstone": 116,
+      "channel": "beta",
+      "version": "116.0.0.0-beta",
+      "date": "2023-07-18"
+    }
+  ],
+  "2023-09-11": [
+    {
+      "mstone": 117,
+      "channel": "stable",
+      "version": "117.0.0.0",
+      "date": "2023-09-11"
+    }
+  ],
+  "2023-08-15": [
+    {
+      "mstone": 117,
+      "channel": "beta",
+      "version": "117.0.0.0-beta",
+      "date": "2023-08-15"
+    }
+  ],
+  "2023-10-09": [
+    {
+      "mstone": 118,
+      "channel": "stable",
+      "version": "118.0.0.0",
+      "date": "2023-10-09"
+    }
+  ],
+  "2023-09-12": [
+    {
+      "mstone": 118,
+      "channel": "beta",
+      "version": "118.0.0.0-beta",
+      "date": "2023-09-12"
+    }
+  ],
+  "2023-10-30": [
+    {
+      "mstone": 119,
+      "channel": "stable",
+      "version": "119.0.0.0",
+      "date": "2023-10-30"
+    }
+  ],
+  "2023-10-05": [
+    {
+      "mstone": 119,
+      "channel": "beta",
+      "version": "119.0.0.0-beta",
+      "date": "2023-10-05"
+    }
+  ],
+  "2023-12-04": [
+    {
+      "mstone": 120,
+      "channel": "stable",
+      "version": "120.0.0.0",
+      "date": "2023-12-04"
+    }
+  ],
+  "2023-10-31": [
+    {
+      "mstone": 120,
+      "channel": "beta",
+      "version": "120.0.0.0-beta",
+      "date": "2023-10-31"
+    }
+  ],
+  "2024-01-22": [
+    {
+      "mstone": 121,
+      "channel": "stable",
+      "version": "121.0.0.0",
+      "date": "2024-01-22"
+    }
+  ],
+  "2023-12-05": [
+    {
+      "mstone": 121,
+      "channel": "beta",
+      "version": "121.0.0.0-beta",
+      "date": "2023-12-05"
+    }
+  ],
+  "2024-02-19": [
+    {
+      "mstone": 122,
+      "channel": "stable",
+      "version": "122.0.0.0",
+      "date": "2024-02-19"
+    }
+  ],
+  "2024-01-23": [
+    {
+      "mstone": 122,
+      "channel": "beta",
+      "version": "122.0.0.0-beta",
+      "date": "2024-01-23"
+    }
+  ],
+  "2024-03-18": [
+    {
+      "mstone": 123,
+      "channel": "stable",
+      "version": "123.0.0.0",
+      "date": "2024-03-18"
+    }
+  ],
+  "2024-02-20": [
+    {
+      "mstone": 123,
+      "channel": "beta",
+      "version": "123.0.0.0-beta",
+      "date": "2024-02-20"
+    }
+  ],
+  "2024-04-15": [
+    {
+      "mstone": 124,
+      "channel": "stable",
+      "version": "124.0.0.0",
+      "date": "2024-04-15"
+    }
+  ],
+  "2024-03-19": [
+    {
+      "mstone": 124,
+      "channel": "beta",
+      "version": "124.0.0.0-beta",
+      "date": "2024-03-19"
+    }
+  ],
+  "2024-05-13": [
+    {
+      "mstone": 125,
+      "channel": "stable",
+      "version": "125.0.0.0",
+      "date": "2024-05-13"
+    }
+  ],
+  "2024-04-16": [
+    {
+      "mstone": 125,
+      "channel": "beta",
+      "version": "125.0.0.0-beta",
+      "date": "2024-04-16"
+    }
+  ],
+  "2024-06-10": [
+    {
+      "mstone": 126,
+      "channel": "stable",
+      "version": "126.0.0.0",
+      "date": "2024-06-10"
+    }
+  ],
+  "2024-05-14": [
+    {
+      "mstone": 126,
+      "channel": "beta",
+      "version": "126.0.0.0-beta",
+      "date": "2024-05-14"
+    }
+  ],
+  "2024-07-22": [
+    {
+      "mstone": 127,
+      "channel": "stable",
+      "version": "127.0.0.0",
+      "date": "2024-07-22"
+    }
+  ],
+  "2024-06-11": [
+    {
+      "mstone": 127,
+      "channel": "beta",
+      "version": "127.0.0.0-beta",
+      "date": "2024-06-11"
+    }
+  ],
+  "2024-08-19": [
+    {
+      "mstone": 128,
+      "channel": "stable",
+      "version": "128.0.0.0",
+      "date": "2024-08-19"
+    }
+  ],
+  "2024-07-23": [
+    {
+      "mstone": 128,
+      "channel": "beta",
+      "version": "128.0.0.0-beta",
+      "date": "2024-07-23"
+    }
+  ],
+  "2024-09-16": [
+    {
+      "mstone": 129,
+      "channel": "stable",
+      "version": "129.0.0.0",
+      "date": "2024-09-16"
+    }
+  ],
+  "2024-08-20": [
+    {
+      "mstone": 129,
+      "channel": "beta",
+      "version": "129.0.0.0-beta",
+      "date": "2024-08-20"
+    }
+  ],
+  "2024-10-14": [
+    {
+      "mstone": 130,
+      "channel": "stable",
+      "version": "130.0.0.0",
+      "date": "2024-10-14"
+    }
+  ],
+  "2024-09-17": [
+    {
+      "mstone": 130,
+      "channel": "beta",
+      "version": "130.0.0.0-beta",
+      "date": "2024-09-17"
+    }
+  ],
+  "2024-11-11": [
+    {
+      "mstone": 131,
+      "channel": "stable",
+      "version": "131.0.0.0",
+      "date": "2024-11-11"
+    }
+  ],
+  "2024-10-15": [
+    {
+      "mstone": 131,
+      "channel": "beta",
+      "version": "131.0.0.0-beta",
+      "date": "2024-10-15"
+    }
+  ],
+  "2025-01-13": [
+    {
+      "mstone": 132,
+      "channel": "stable",
+      "version": "132.0.0.0",
+      "date": "2025-01-13"
+    }
+  ],
+  "2024-11-12": [
+    {
+      "mstone": 132,
+      "channel": "beta",
+      "version": "132.0.0.0-beta",
+      "date": "2024-11-12"
+    }
+  ],
+  "2025-02-03": [
+    {
+      "mstone": 133,
+      "channel": "stable",
+      "version": "133.0.0.0",
+      "date": "2025-02-03"
+    }
+  ],
+  "2025-01-14": [
+    {
+      "mstone": 133,
+      "channel": "beta",
+      "version": "133.0.0.0-beta",
+      "date": "2025-01-14"
+    }
+  ],
+  "2025-03-03": [
+    {
+      "mstone": 134,
+      "channel": "stable",
+      "version": "134.0.0.0",
+      "date": "2025-03-03"
+    }
+  ],
+  "2025-02-04": [
+    {
+      "mstone": 134,
+      "channel": "beta",
+      "version": "134.0.0.0-beta",
+      "date": "2025-02-04"
+    }
+  ],
+  "2025-03-31": [
+    {
+      "mstone": 135,
+      "channel": "stable",
+      "version": "135.0.0.0",
+      "date": "2025-03-31"
+    }
+  ],
+  "2025-03-04": [
+    {
+      "mstone": 135,
+      "channel": "beta",
+      "version": "135.0.0.0-beta",
+      "date": "2025-03-04"
+    }
+  ],
+  "2025-04-28": [
+    {
+      "mstone": 136,
+      "channel": "stable",
+      "version": "136.0.0.0",
+      "date": "2025-04-28"
+    }
+  ],
+  "2025-04-01": [
+    {
+      "mstone": 136,
+      "channel": "beta",
+      "version": "136.0.0.0-beta",
+      "date": "2025-04-01"
+    }
+  ],
+  "2025-05-26": [
+    {
+      "mstone": 137,
+      "channel": "stable",
+      "version": "137.0.0.0",
+      "date": "2025-05-26"
+    }
+  ],
+  "2025-04-29": [
+    {
+      "mstone": 137,
+      "channel": "beta",
+      "version": "137.0.0.0-beta",
+      "date": "2025-04-29"
+    }
+  ],
+  "2025-06-23": [
+    {
+      "mstone": 138,
+      "channel": "stable",
+      "version": "138.0.0.0",
+      "date": "2025-06-23"
+    }
+  ],
+  "2025-05-27": [
+    {
+      "mstone": 138,
+      "channel": "beta",
+      "version": "138.0.0.0-beta",
+      "date": "2025-05-27"
+    }
+  ],
+  "2025-08-04": [
+    {
+      "mstone": 139,
+      "channel": "stable",
+      "version": "139.0.0.0",
+      "date": "2025-08-04"
+    }
+  ],
+  "2025-06-24": [
+    {
+      "mstone": 139,
+      "channel": "beta",
+      "version": "139.0.0.0-beta",
+      "date": "2025-06-24"
+    }
+  ],
+  "2025-09-01": [
+    {
+      "mstone": 140,
+      "channel": "stable",
+      "version": "140.0.0.0",
+      "date": "2025-09-01"
+    }
+  ],
+  "2025-08-05": [
+    {
+      "mstone": 140,
+      "channel": "beta",
+      "version": "140.0.0.0-beta",
+      "date": "2025-08-05"
+    }
+  ]
+}
