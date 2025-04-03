@@ -1,16 +1,6 @@
 const months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
 ];
 
 const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -21,8 +11,7 @@ function generateMonth(year, month, getMilestoneInfo) {
   container.setAttribute('data-month', `${year}-${month}`);
 
   const header = document.createElement('div');
-  header.classList.add('month_row');
-  header.classList.add('header');
+  header.classList.add('month_row', 'header');
   container.appendChild(header);
 
   const monthName = document.createElement('h3');
@@ -30,8 +19,7 @@ function generateMonth(year, month, getMilestoneInfo) {
   header.appendChild(monthName);
 
   const dayRow = document.createElement('div');
-  dayRow.classList.add('month_row');
-  dayRow.classList.add('day_row');
+  dayRow.classList.add('month_row', 'day_row');
   container.appendChild(dayRow);
 
   for (let i = 0; i < 7; i++) {
@@ -42,8 +30,8 @@ function generateMonth(year, month, getMilestoneInfo) {
   }
 
   const today = new Date();
-  const firstDay = new Date(year, month - 1, 1, 0, 0, 0, 0);
-  const offset = firstDay.getDay() === 0 ? 6 : firstDay.getDay() - 1; // Adjust for Monday start
+  const firstDay = new Date(year, month - 1, 1);
+  const offset = firstDay.getDay() === 0 ? 6 : firstDay.getDay() - 1;
 
   for (let week = 0; week < 6; week++) {
     const row = document.createElement('div');
@@ -52,7 +40,7 @@ function generateMonth(year, month, getMilestoneInfo) {
 
     for (let day = 0; day < 7; day++) {
       const n = week * 7 + day - offset + 1;
-      const currentDay = new Date(year, month - 1, n, 0, 0, 0, 0);
+      const currentDay = new Date(year, month - 1, n);
 
       const valid = n > 0 && currentDay.getMonth() === month - 1;
       const future = currentDay.getTime() > today.getTime();
@@ -70,38 +58,42 @@ function generateMonth(year, month, getMilestoneInfo) {
       cell.appendChild(info);
 
       if (valid) {
-        const dateString = `${year}-${month < 10 ? `0${month}` : month}-${n < 10 ? `0${n}` : n}`;
-        const milestones = getMilestoneInfo(dateString);
-
-        if (milestones && milestones.length > 0) {
+        const dateString = `${year}-${month}-${n}`;
+        const releases = getMilestoneInfo(dateString);
+        
+        if (releases.length > 0) {
           cell.classList.add('has-milestone');
-
-          // Create tooltip with milestone info
+          
           const tooltip = document.createElement('div');
           tooltip.classList.add('milestone-tooltip');
           
-          milestones.forEach(milestone => {
-            const milestoneInfo = document.createElement('div');
-            milestoneInfo.innerHTML = `<strong>Chrome ${milestone.mstone}</strong> ${milestone.channel}`;
-            tooltip.appendChild(milestoneInfo);
-          });
+          const releaseInfo = releases.map(release => 
+            `${release.channel}: ${release.version} (M${release.milestone})`
+          ).join('<br>');
           
+          tooltip.innerHTML = releaseInfo;
           cell.appendChild(tooltip);
-
-          // Add icons for each milestone
-          milestones.forEach(milestone => {
-            const icon = document.createElement('i');
-            icon.classList.add('fab');
-            icon.classList.add('fa-chrome');
+          
+          releases.forEach(release => {
+            const indicator = document.createElement('i');
+            indicator.classList.add('fab', 'fa-chrome');
             
-            // Different colors for different channels
-            if (milestone.channel === 'stable') {
-              icon.style.backgroundColor = '#4285F4'; // Google Blue
-            } else if (milestone.channel === 'beta') {
-              icon.style.backgroundColor = '#0F9D58'; // Google Green
+            switch(release.channel.toLowerCase()) {
+              case 'stable':
+                indicator.style.backgroundColor = '#4285F4';
+                break;
+              case 'beta':
+                indicator.style.backgroundColor = '#0F9D58';
+                break;
+              case 'dev':
+                indicator.style.backgroundColor = '#EA4335';
+                break;
+              case 'canary':
+                indicator.style.backgroundColor = '#FBBC04';
+                break;
             }
             
-            info.appendChild(icon);
+            info.appendChild(indicator);
           });
         }
       }
@@ -115,20 +107,34 @@ function generateMonth(year, month, getMilestoneInfo) {
 
 async function main() {
   try {
-    const response = await fetch('/chromium/data.json');
+    const response = await fetch('https://chromiumdash.appspot.com/fetch_releases');
     if (!response.ok) {
-      throw new Error(`Failed to fetch Chromium data: ${response.statusText}`);
+      throw new Error(`Failed to fetch Chromium releases: ${response.statusText}`);
     }
     
-    const milestoneData = await response.json();
+    const releases = await response.json();
     
     const calendarSection = document.querySelector('.chromium-calendar');
-    // Clear out the loading...
     calendarSection.innerHTML = '';
 
     const now = new Date();
     
-    // Show 6 months in the past and 6 months in the future
+    const releasesMap = {};
+    releases.forEach(release => {
+      const date = new Date(release.time);
+      const dateString = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+      
+      if (!releasesMap[dateString]) {
+        releasesMap[dateString] = [];
+      }
+      
+      releasesMap[dateString].push({
+        channel: release.channel,
+        version: release.version,
+        milestone: release.milestone
+      });
+    });
+    
     for (let monthOffset = 6; monthOffset >= -6; monthOffset--) {
       let year = now.getFullYear();
       let month = now.getMonth() + 1 + monthOffset;
@@ -145,16 +151,15 @@ async function main() {
       
       calendarSection.appendChild(
         generateMonth(year, month, (dateString) => {
-          return milestoneData[dateString] || [];
+          return releasesMap[dateString] || [];
         })
       );
     }
   } catch (error) {
-    console.error('Error loading Chromium milestone data:', error);
+    console.error('Error loading Chromium releases data:', error);
     document.querySelector('.chromium-calendar').innerHTML = 
-      `<div class="error-message">Failed to load Chromium milestone data: ${error.message}</div>`;
+      `<div class="error-message">Failed to load Chromium releases data: ${error.message}</div>`;
   }
 }
 
-// Initialize when the DOM is ready
 document.addEventListener('DOMContentLoaded', main);
