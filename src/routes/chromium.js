@@ -111,10 +111,11 @@ async function fetchChromiumReleases() {
       return JSON.parse(cacheData);
     } catch (err) {
       // No cache available
-      return [];
+      return {};
     }
   }
 }
+
 // Route to render the Chromium releases page
 router.get('/', a(async (req, res) => {
   res.render('chromium', {
@@ -127,18 +128,42 @@ router.get('/', a(async (req, res) => {
 router.get('/data.json', a(async (req, res) => {
   try {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    const releases = await fetchChromiumReleases();
+    const releasesData = await fetchChromiumReleases();
     
-    // Group releases by date for easier calendar processing
-    const releasesByDate = {};
-    releases.forEach(release => {
-      if (!releasesByDate[release.date]) {
-        releasesByDate[release.date] = [];
+    // Format data for optimal display with stacked badges
+    const formattedData = {};
+    
+    Object.entries(releasesData).forEach(([date, releases]) => {
+      if (!formattedData[date]) {
+        formattedData[date] = [];
       }
-      releasesByDate[release.date].push(release);
+
+      // Group by version to avoid duplicates and organize by channel
+      const versionMap = new Map();
+      
+      releases.forEach(release => {
+        const versionKey = release.version;
+        
+        if (!versionMap.has(versionKey)) {
+          versionMap.set(versionKey, {
+            version: release.version,
+            milestone: release.milestone,
+            channels: [release.channel],
+            date: release.date
+          });
+        } else {
+          // Add channel if it doesn't exist for this version
+          const entry = versionMap.get(versionKey);
+          if (!entry.channels.includes(release.channel)) {
+            entry.channels.push(release.channel);
+          }
+        }
+      });
+      
+      formattedData[date] = Array.from(versionMap.values());
     });
     
-    res.json(releasesByDate);
+    res.json(formattedData);
   } catch (error) {
     console.error('Error serving releases data:', error);
     res.status(500).json({ error: 'Failed to fetch release data' });

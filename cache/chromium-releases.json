@@ -1,0 +1,1516 @@
+{
+  "2025-04-05": [
+    {
+      "channel": "Canary",
+      "version": "137.0.7109.0",
+      "milestone": 137,
+      "date": "2025-04-05",
+      "timestamp": 1743848267166
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7109.1",
+      "milestone": 137,
+      "date": "2025-04-05",
+      "timestamp": 1743831877367
+    }
+  ],
+  "2025-04-04": [
+    {
+      "channel": "Canary",
+      "version": "137.0.7108.2",
+      "milestone": 137,
+      "date": "2025-04-04",
+      "timestamp": 1743810144219
+    },
+    {
+      "channel": "Canary_asan",
+      "version": "137.0.7108.1",
+      "milestone": 137,
+      "date": "2025-04-04",
+      "timestamp": 1743801530354
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7108.0",
+      "milestone": 137,
+      "date": "2025-04-04",
+      "timestamp": 1743792595885
+    },
+    {
+      "channel": "Dev",
+      "version": "137.0.7106.2",
+      "milestone": 137,
+      "date": "2025-04-04",
+      "timestamp": 1743791360079
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7108.1",
+      "milestone": 137,
+      "date": "2025-04-04",
+      "timestamp": 1743787825093
+    },
+    {
+      "channel": "Canary_asan",
+      "version": "137.0.7107.2",
+      "milestone": 137,
+      "date": "2025-04-04",
+      "timestamp": 1743757261815
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7107.2",
+      "milestone": 137,
+      "date": "2025-04-04",
+      "timestamp": 1743745790626
+    }
+  ],
+  "2025-04-03": [
+    {
+      "channel": "Canary_asan",
+      "version": "137.0.7107.1",
+      "milestone": 137,
+      "date": "2025-04-03",
+      "timestamp": 1743721497485
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7107.0",
+      "milestone": 137,
+      "date": "2025-04-03",
+      "timestamp": 1743718774668
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7107.1",
+      "milestone": 137,
+      "date": "2025-04-03",
+      "timestamp": 1743702493595
+    },
+    {
+      "channel": "Beta",
+      "version": "136.0.7103.17",
+      "milestone": 136,
+      "date": "2025-04-03",
+      "timestamp": 1743702179734
+    },
+    {
+      "channel": "Dev",
+      "version": "137.0.7106.1",
+      "milestone": 137,
+      "date": "2025-04-03",
+      "timestamp": 1743697846569
+    },
+    {
+      "channel": "Dev",
+      "version": "137.0.7104.0",
+      "milestone": 137,
+      "date": "2025-04-03",
+      "timestamp": 1743685853802
+    },
+    {
+      "channel": "Canary_asan",
+      "version": "137.0.7106.1",
+      "milestone": 137,
+      "date": "2025-04-03",
+      "timestamp": 1743680303465
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7106.0",
+      "milestone": 137,
+      "date": "2025-04-03",
+      "timestamp": 1743678487416
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7106.1",
+      "milestone": 137,
+      "date": "2025-04-03",
+      "timestamp": 1743659186201
+    }
+  ],
+  "2025-04-02": [
+    {
+      "channel": "Canary_asan",
+      "version": "137.0.7105.1",
+      "milestone": 137,
+      "date": "2025-04-02",
+      "timestamp": 1743630512871
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7105.0",
+      "milestone": 137,
+      "date": "2025-04-02",
+      "timestamp": 1743629019306
+    },
+    {
+      "channel": "Beta",
+      "version": "136.0.7103.4",
+      "milestone": 136,
+      "date": "2025-04-02",
+      "timestamp": 1743624388435
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7105.1",
+      "milestone": 137,
+      "date": "2025-04-02",
+      "timestamp": 1743616009381
+    },
+    {
+      "channel": "Beta",
+      "version": "136.0.7103.5",
+      "milestone": 136,
+      "date": "2025-04-02",
+      "timestamp": 1743598238353
+    },
+    {
+      "channel": "Canary_asan",
+      "version": "137.0.7104.1",
+      "milestone": 137,
+      "date": "2025-04-02",
+      "timestamp": 1743594996443
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7104.0",
+      "milestone": 137,
+      "date": "2025-04-02",
+      "timestamp": 1743589488302
+    },
+    {
+      "channel": "Canary",
+      "version": "136.0.7103.15",
+      "milestone": 136,
+      "date": "2025-04-02",
+      "timestamp": 1743576288667
+    },
+    {
+      "channel": "Canary",
+      "version": "137.0.7104.1",
+      "milestone": 137,
+      "date": "2025-04-02",
+      "timestamp": 1743573180886
+    },
+    {
+      "channel": "Canary",
+      "version": "136.0.7103.4",
+      "milestone": 136,
+      "date": "2025-04-02",
+      "timestamp": 1743563350953
+    },
+    {
+      "channel": "Canary",
+      "version": "136.0.7103.3",
+      "milestone": 136,
+      "date": "2025-04-02",
+      "timestamp": 1743561403559
+    }
+  ],
+  "2025-04-01": [
+    {
+      "channel": "Canary",
+      "version": "136.0.7103.2",
+      "milestone": 136,
+      "date": "2025-04-01",
+      "timestamp": 1743550393459
+    },
+    {
+      "channel": "Stable",
+      "version": "135.0.7049.53",
+      "milestone": 135,
+      "date": "2025-04-01",
+      "timestamp": 1743529699426
+    },
+    {
+      "channel": "Stable",
+      "version": "135.0.7049.42",
+      "milestone": 135,
+      "date": "2025-04-01",
+      "timestamp": 1743527617472
+    },
+    {
+      "channel": "Stable",
+      "version": "135.0.7049.52",
+      "milestone": 135,
+      "date": "2025-04-01",
+      "timestamp": 1743524017446
+    },
+    {
+      "channel": "Canary",
+      "version": "136.0.7103.0",
+      "milestone": 136,
+      "date": "2025-04-01",
+      "timestamp": 1743503867527
+    },
+    {
+      "channel": "Canary",
+      "version": "136.0.7103.1",
+      "milestone": 136,
+      "date": "2025-04-01",
+      "timestamp": 1743485412314
+    }
+  ],
+  "2025-03-31": [
+    {
+      "channel": "Canary_asan",
+      "version": "136.0.7102.1",
+      "milestone": 136,
+      "date": "2025-03-31",
+      "timestamp": 1743464559573
+    },
+    {
+      "channel": "Canary",
+      "version": "136.0.7102.0",
+      "milestone": 136,
+      "date": "2025-03-31",
+      "timestamp": 1743461718661
+    },
+    {
+      "channel": "Canary",
+      "version": "136.0.7102.1",
+      "milestone": 136,
+      "date": "2025-03-31",
+      "timestamp": 1743443272484
+    },
+    {
+      "channel": "Canary_asan",
+      "version": "136.0.7101.1",
+      "milestone": 136,
+      "date": "2025-03-31",
+      "timestamp": 1743413039726
+    },
+    {
+      "channel": "Canary",
+      "version": "136.0.7101.1",
+      "milestone": 136,
+      "date": "2025-03-31",
+      "timestamp": 1743400549648
+    }
+  ],
+  "2025-03-30": [
+    {
+      "channel": "Canary_asan",
+      "version": "136.0.7100.1",
+      "milestone": 136,
+      "date": "2025-03-30",
+      "timestamp": 1743373436237
+    },
+    {
+      "channel": "Canary_asan",
+      "version": "136.0.7099.1",
+      "milestone": 136,
+      "date": "2025-03-30",
+      "timestamp": 1743336543571
+    }
+  ],
+  "2025-03-28": [
+    {
+      "channel": "Dev",
+      "version": "134.0.6998.181",
+      "milestone": 134,
+      "date": "2025-03-28",
+      "timestamp": 1743178260000
+    }
+  ],
+  "2025-03-27": [
+    {
+      "channel": "Dev",
+      "version": "136.0.7091.2",
+      "milestone": 136,
+      "date": "2025-03-27",
+      "timestamp": 1743098559308
+    },
+    {
+      "channel": "Dev",
+      "version": "136.0.7093.1",
+      "milestone": 136,
+      "date": "2025-03-27",
+      "timestamp": 1743080702242
+    }
+  ],
+  "2025-03-26": [
+    {
+      "channel": "Stable",
+      "version": "135.0.7049.41",
+      "milestone": 135,
+      "date": "2025-03-26",
+      "timestamp": 1743024234151
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.167",
+      "milestone": 134,
+      "date": "2025-03-26",
+      "timestamp": 1743024234151
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.179",
+      "milestone": 134,
+      "date": "2025-03-26",
+      "timestamp": 1743024234151
+    },
+    {
+      "channel": "Beta",
+      "version": "135.0.7049.41",
+      "milestone": 135,
+      "date": "2025-03-26",
+      "timestamp": 1743012051857
+    },
+    {
+      "channel": "Stable",
+      "version": "135.0.7049.38",
+      "milestone": 135,
+      "date": "2025-03-26",
+      "timestamp": 1743009831889
+    },
+    {
+      "channel": "Stable",
+      "version": "135.0.7049.37",
+      "milestone": 135,
+      "date": "2025-03-26",
+      "timestamp": 1743009831889
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.136",
+      "milestone": 134,
+      "date": "2025-03-26",
+      "timestamp": 1743009052609
+    },
+    {
+      "channel": "Stable",
+      "version": "135.0.7049.35",
+      "milestone": 135,
+      "date": "2025-03-26",
+      "timestamp": 1743005129089
+    },
+    {
+      "channel": "Beta",
+      "version": "135.0.7049.36",
+      "milestone": 135,
+      "date": "2025-03-26",
+      "timestamp": 1742995905300
+    },
+    {
+      "channel": "Beta",
+      "version": "135.0.7049.38",
+      "milestone": 135,
+      "date": "2025-03-26",
+      "timestamp": 1742994647982
+    }
+  ],
+  "2025-03-25": [
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.178",
+      "milestone": 134,
+      "date": "2025-03-25",
+      "timestamp": 1742936207007
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.177",
+      "milestone": 134,
+      "date": "2025-03-25",
+      "timestamp": 1742936207007
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.167",
+      "milestone": 134,
+      "date": "2025-03-25",
+      "timestamp": 1742936207007
+    },
+    {
+      "channel": "Extended",
+      "version": "134.0.6998.178",
+      "milestone": 134,
+      "date": "2025-03-25",
+      "timestamp": 1742936207007
+    }
+  ],
+  "2025-03-24": [
+    {
+      "channel": "Dev",
+      "version": "136.0.7081.2",
+      "milestone": 136,
+      "date": "2025-03-24",
+      "timestamp": 1742841059475
+    }
+  ],
+  "2025-03-21": [
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.165",
+      "milestone": 134,
+      "date": "2025-03-21",
+      "timestamp": 1742575366791
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.166",
+      "milestone": 134,
+      "date": "2025-03-21",
+      "timestamp": 1742575359318
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.119",
+      "milestone": 134,
+      "date": "2025-03-21",
+      "timestamp": 1742575359318
+    },
+    {
+      "channel": "Extended",
+      "version": "134.0.6998.166",
+      "milestone": 134,
+      "date": "2025-03-21",
+      "timestamp": 1742575359318
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.135",
+      "milestone": 134,
+      "date": "2025-03-21",
+      "timestamp": 1742574117826
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.109",
+      "milestone": 134,
+      "date": "2025-03-21",
+      "timestamp": 1742574117826
+    }
+  ],
+  "2025-03-20": [
+    {
+      "channel": "Beta",
+      "version": "135.0.7049.28",
+      "milestone": 135,
+      "date": "2025-03-20",
+      "timestamp": 1742494573960
+    },
+    {
+      "channel": "Dev",
+      "version": "136.0.7079.1",
+      "milestone": 136,
+      "date": "2025-03-20",
+      "timestamp": 1742479890923
+    },
+    {
+      "channel": "Dev",
+      "version": "136.0.7077.2",
+      "milestone": 136,
+      "date": "2025-03-20",
+      "timestamp": 1742475767243
+    }
+  ],
+  "2025-03-19": [
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.117",
+      "milestone": 134,
+      "date": "2025-03-19",
+      "timestamp": 1742407445224
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.118",
+      "milestone": 134,
+      "date": "2025-03-19",
+      "timestamp": 1742407444320
+    },
+    {
+      "channel": "Extended",
+      "version": "134.0.6998.118",
+      "milestone": 134,
+      "date": "2025-03-19",
+      "timestamp": 1742407444320
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.90",
+      "milestone": 134,
+      "date": "2025-03-19",
+      "timestamp": 1742407444320
+    },
+    {
+      "channel": "Beta",
+      "version": "135.0.7049.26",
+      "milestone": 135,
+      "date": "2025-03-19",
+      "timestamp": 1742400272364
+    }
+  ],
+  "2025-03-18": [
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.40",
+      "milestone": 134,
+      "date": "2025-03-18",
+      "timestamp": 1742329109430
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.108",
+      "milestone": 134,
+      "date": "2025-03-18",
+      "timestamp": 1742329109430
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.96",
+      "milestone": 134,
+      "date": "2025-03-18",
+      "timestamp": 1742328090166
+    }
+  ],
+  "2025-03-13": [
+    {
+      "channel": "Dev",
+      "version": "136.0.7064.0",
+      "milestone": 136,
+      "date": "2025-03-13",
+      "timestamp": 1741892636644
+    },
+    {
+      "channel": "Dev",
+      "version": "136.0.7066.1",
+      "milestone": 136,
+      "date": "2025-03-13",
+      "timestamp": 1741873696183
+    }
+  ],
+  "2025-03-12": [
+    {
+      "channel": "Beta",
+      "version": "135.0.7049.17",
+      "milestone": 135,
+      "date": "2025-03-12",
+      "timestamp": 1741817006990
+    },
+    {
+      "channel": "Beta",
+      "version": "135.0.7049.14",
+      "milestone": 135,
+      "date": "2025-03-12",
+      "timestamp": 1741787525586
+    }
+  ],
+  "2025-03-11": [
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.99",
+      "milestone": 134,
+      "date": "2025-03-11",
+      "timestamp": 1741716052098
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.95",
+      "milestone": 134,
+      "date": "2025-03-11",
+      "timestamp": 1741711726268
+    }
+  ],
+  "2025-03-10": [
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.88",
+      "milestone": 134,
+      "date": "2025-03-10",
+      "timestamp": 1741636778921
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.89",
+      "milestone": 134,
+      "date": "2025-03-10",
+      "timestamp": 1741636776653
+    },
+    {
+      "channel": "Extended",
+      "version": "134.0.6998.89",
+      "milestone": 134,
+      "date": "2025-03-10",
+      "timestamp": 1741636776653
+    }
+  ],
+  "2025-03-07": [
+    {
+      "channel": "Dev",
+      "version": "136.0.7052.2",
+      "milestone": 136,
+      "date": "2025-03-07",
+      "timestamp": 1741372462320
+    },
+    {
+      "channel": "Dev",
+      "version": "136.0.7052.0",
+      "milestone": 136,
+      "date": "2025-03-07",
+      "timestamp": 1741354007600
+    }
+  ],
+  "2025-03-06": [
+    {
+      "channel": "Dev",
+      "version": "136.0.7052.1",
+      "milestone": 136,
+      "date": "2025-03-06",
+      "timestamp": 1741282499171
+    }
+  ],
+  "2025-03-05": [
+    {
+      "channel": "Beta",
+      "version": "135.0.7049.4",
+      "milestone": 135,
+      "date": "2025-03-05",
+      "timestamp": 1741217701441
+    },
+    {
+      "channel": "Beta",
+      "version": "135.0.7049.3",
+      "milestone": 135,
+      "date": "2025-03-05",
+      "timestamp": 1741200472226
+    }
+  ],
+  "2025-03-04": [
+    {
+      "channel": "Extended",
+      "version": "134.0.6998.45",
+      "milestone": 134,
+      "date": "2025-03-04",
+      "timestamp": 1741121668133
+    },
+    {
+      "channel": "Extended",
+      "version": "134.0.6998.36",
+      "milestone": 134,
+      "date": "2025-03-04",
+      "timestamp": 1741121668133
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.35",
+      "milestone": 134,
+      "date": "2025-03-04",
+      "timestamp": 1741121452375
+    },
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.138",
+      "milestone": 133,
+      "date": "2025-03-04",
+      "timestamp": 1741118023383
+    }
+  ],
+  "2025-03-03": [
+    {
+      "channel": "Dev",
+      "version": "135.0.7039.0",
+      "milestone": 135,
+      "date": "2025-03-03",
+      "timestamp": 1741041084327
+    }
+  ],
+  "2025-02-27": [
+    {
+      "channel": "Dev",
+      "version": "135.0.7037.2",
+      "milestone": 135,
+      "date": "2025-02-27",
+      "timestamp": 1740700772232
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.44",
+      "milestone": 134,
+      "date": "2025-02-27",
+      "timestamp": 1740697169911
+    },
+    {
+      "channel": "Dev",
+      "version": "135.0.7039.1",
+      "milestone": 135,
+      "date": "2025-02-27",
+      "timestamp": 1740674101654
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.34",
+      "milestone": 134,
+      "date": "2025-02-27",
+      "timestamp": 1740614680044
+    }
+  ],
+  "2025-02-26": [
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.39",
+      "milestone": 134,
+      "date": "2025-02-26",
+      "timestamp": 1740604601497
+    },
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.123",
+      "milestone": 133,
+      "date": "2025-02-26",
+      "timestamp": 1740604601497
+    },
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.138",
+      "milestone": 133,
+      "date": "2025-02-26",
+      "timestamp": 1740603747907
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.35",
+      "milestone": 134,
+      "date": "2025-02-26",
+      "timestamp": 1740594559287
+    },
+    {
+      "channel": "Dev",
+      "version": "134.0.6998.32",
+      "milestone": 134,
+      "date": "2025-02-26",
+      "timestamp": 1740591840000
+    },
+    {
+      "channel": "Stable",
+      "version": "134.0.6998.33",
+      "milestone": 134,
+      "date": "2025-02-26",
+      "timestamp": 1740590082010
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.39",
+      "milestone": 134,
+      "date": "2025-02-26",
+      "timestamp": 1740579218423
+    }
+  ],
+  "2025-02-25": [
+    {
+      "channel": "Extended",
+      "version": "132.0.6834.210",
+      "milestone": 132,
+      "date": "2025-02-25",
+      "timestamp": 1740509522891
+    },
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.137",
+      "milestone": 133,
+      "date": "2025-02-25",
+      "timestamp": 1740509039049
+    },
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.141",
+      "milestone": 133,
+      "date": "2025-02-25",
+      "timestamp": 1740507238410
+    }
+  ],
+  "2025-02-20": [
+    {
+      "channel": "Dev",
+      "version": "135.0.7023.0",
+      "milestone": 135,
+      "date": "2025-02-20",
+      "timestamp": 1740086706511
+    },
+    {
+      "channel": "Dev",
+      "version": "135.0.7023.2",
+      "milestone": 135,
+      "date": "2025-02-20",
+      "timestamp": 1740057455925
+    },
+    {
+      "channel": "Dev",
+      "version": "135.0.7025.1",
+      "milestone": 135,
+      "date": "2025-02-20",
+      "timestamp": 1740057161593
+    }
+  ],
+  "2025-02-19": [
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.24",
+      "milestone": 134,
+      "date": "2025-02-19",
+      "timestamp": 1740000840000
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.23",
+      "milestone": 134,
+      "date": "2025-02-19",
+      "timestamp": 1739993207959
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.22",
+      "milestone": 134,
+      "date": "2025-02-19",
+      "timestamp": 1739977897524
+    }
+  ],
+  "2025-02-18": [
+    {
+      "channel": "Extended",
+      "version": "132.0.6834.209",
+      "milestone": 132,
+      "date": "2025-02-18",
+      "timestamp": 1739922633483
+    },
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.126",
+      "milestone": 133,
+      "date": "2025-02-18",
+      "timestamp": 1739920576019
+    },
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.120",
+      "milestone": 133,
+      "date": "2025-02-18",
+      "timestamp": 1739914531159
+    }
+  ],
+  "2025-02-14": [
+    {
+      "channel": "Dev",
+      "version": "134.0.6998.5",
+      "milestone": 134,
+      "date": "2025-02-14",
+      "timestamp": 1739547540000
+    },
+    {
+      "channel": "Beta",
+      "version": "133.0.6943.17",
+      "milestone": 133,
+      "date": "2025-02-14",
+      "timestamp": 1739547540000
+    },
+    {
+      "channel": "Stable",
+      "version": "132.0.6821.0",
+      "milestone": 132,
+      "date": "2025-02-14",
+      "timestamp": 1739547540000
+    },
+    {
+      "channel": "Extended",
+      "version": "130.0.6723.35",
+      "milestone": 130,
+      "date": "2025-02-14",
+      "timestamp": 1739547540000
+    }
+  ],
+  "2025-02-13": [
+    {
+      "channel": "Dev",
+      "version": "135.0.7015.1",
+      "milestone": 135,
+      "date": "2025-02-13",
+      "timestamp": 1739463338481
+    },
+    {
+      "channel": "Dev",
+      "version": "135.0.7012.3",
+      "milestone": 135,
+      "date": "2025-02-13",
+      "timestamp": 1739457084222
+    },
+    {
+      "channel": "Dev",
+      "version": "135.0.7012.4",
+      "milestone": 135,
+      "date": "2025-02-13",
+      "timestamp": 1739455955359
+    }
+  ],
+  "2025-02-12": [
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.13",
+      "milestone": 134,
+      "date": "2025-02-12",
+      "timestamp": 1739396280000
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.15",
+      "milestone": 134,
+      "date": "2025-02-12",
+      "timestamp": 1739387627525
+    },
+    {
+      "channel": "Extended",
+      "version": "132.0.6834.207",
+      "milestone": 132,
+      "date": "2025-02-12",
+      "timestamp": 1739386634936
+    },
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.98",
+      "milestone": 133,
+      "date": "2025-02-12",
+      "timestamp": 1739384834619
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.12",
+      "milestone": 134,
+      "date": "2025-02-12",
+      "timestamp": 1739373432000
+    }
+  ],
+  "2025-02-11": [
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.84",
+      "milestone": 133,
+      "date": "2025-02-11",
+      "timestamp": 1739310105383
+    }
+  ],
+  "2025-02-06": [
+    {
+      "channel": "Dev",
+      "version": "135.0.6999.2",
+      "milestone": 135,
+      "date": "2025-02-06",
+      "timestamp": 1738867525340
+    },
+    {
+      "channel": "Dev",
+      "version": "135.0.7001.1",
+      "milestone": 135,
+      "date": "2025-02-06",
+      "timestamp": 1738855765723
+    },
+    {
+      "channel": "Dev",
+      "version": "135.0.6999.0",
+      "milestone": 135,
+      "date": "2025-02-06",
+      "timestamp": 1738852156628
+    }
+  ],
+  "2025-02-05": [
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.4",
+      "milestone": 134,
+      "date": "2025-02-05",
+      "timestamp": 1738791180000
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.3",
+      "milestone": 134,
+      "date": "2025-02-05",
+      "timestamp": 1738773280475
+    },
+    {
+      "channel": "Beta",
+      "version": "134.0.6998.2",
+      "milestone": 134,
+      "date": "2025-02-05",
+      "timestamp": 1738763607640
+    }
+  ],
+  "2025-02-04": [
+    {
+      "channel": "Extended",
+      "version": "132.0.6834.194",
+      "milestone": 132,
+      "date": "2025-02-04",
+      "timestamp": 1738692929747
+    },
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.53",
+      "milestone": 133,
+      "date": "2025-02-04",
+      "timestamp": 1738690815998
+    },
+    {
+      "channel": "Beta",
+      "version": "133.0.6943.49",
+      "milestone": 133,
+      "date": "2025-02-04",
+      "timestamp": 1738682698201
+    }
+  ],
+  "2025-01-31": [
+    {
+      "channel": "Dev",
+      "version": "134.0.6988.2",
+      "milestone": 134,
+      "date": "2025-01-31",
+      "timestamp": 1738333577124
+    }
+  ],
+  "2025-01-30": [
+    {
+      "channel": "Dev",
+      "version": "134.0.6988.1",
+      "milestone": 134,
+      "date": "2025-01-30",
+      "timestamp": 1738246669024
+    },
+    {
+      "channel": "Dev",
+      "version": "134.0.6986.0",
+      "milestone": 134,
+      "date": "2025-01-30",
+      "timestamp": 1738246611749
+    }
+  ],
+  "2025-01-29": [
+    {
+      "channel": "Stable",
+      "version": "133.0.6943.33",
+      "milestone": 133,
+      "date": "2025-01-29",
+      "timestamp": 1738181278553
+    },
+    {
+      "channel": "Beta",
+      "version": "133.0.6943.35",
+      "milestone": 133,
+      "date": "2025-01-29",
+      "timestamp": 1738171661550
+    },
+    {
+      "channel": "Beta",
+      "version": "133.0.6943.34",
+      "milestone": 133,
+      "date": "2025-01-29",
+      "timestamp": 1738160564187
+    }
+  ],
+  "2025-01-28": [
+    {
+      "channel": "Stable",
+      "version": "132.0.6834.159",
+      "milestone": 132,
+      "date": "2025-01-28",
+      "timestamp": 1738093826123
+    },
+    {
+      "channel": "Extended",
+      "version": "132.0.6834.160",
+      "milestone": 132,
+      "date": "2025-01-28",
+      "timestamp": 1738093825607
+    }
+  ],
+  "2025-01-24": [
+    {
+      "channel": "Dev",
+      "version": "134.0.6974.3",
+      "milestone": 134,
+      "date": "2025-01-24",
+      "timestamp": 1737735577239
+    }
+  ],
+  "2025-01-22": [
+    {
+      "channel": "Dev",
+      "version": "133.0.6943.17",
+      "milestone": 133,
+      "date": "2025-01-22",
+      "timestamp": 1737584700000
+    },
+    {
+      "channel": "Beta",
+      "version": "132.0.6821.0",
+      "milestone": 132,
+      "date": "2025-01-22",
+      "timestamp": 1737584700000
+    },
+    {
+      "channel": "Stable",
+      "version": "130.0.6723.35",
+      "milestone": 130,
+      "date": "2025-01-22",
+      "timestamp": 1737584700000
+    },
+    {
+      "channel": "Extended",
+      "version": "129.0.6668.18",
+      "milestone": 129,
+      "date": "2025-01-22",
+      "timestamp": 1737584700000
+    },
+    {
+      "channel": "Extended",
+      "version": "132.0.6834.111",
+      "milestone": 132,
+      "date": "2025-01-22",
+      "timestamp": 1737569405619
+    }
+  ],
+  "2025-01-21": [
+    {
+      "channel": "Stable",
+      "version": "132.0.6834.100",
+      "milestone": 132,
+      "date": "2025-01-21",
+      "timestamp": 1737486394673
+    }
+  ],
+  "2025-01-08": [
+    {
+      "channel": "Stable",
+      "version": "132.0.6834.78",
+      "milestone": 132,
+      "date": "2025-01-08",
+      "timestamp": 1736358670100
+    }
+  ],
+  "2024-12-17": [
+    {
+      "channel": "Stable",
+      "version": "131.0.6778.154",
+      "milestone": 131,
+      "date": "2024-12-17",
+      "timestamp": 1734459952756
+    }
+  ],
+  "2024-11-13": [
+    {
+      "channel": "Dev",
+      "version": "132.0.6821.0",
+      "milestone": 132,
+      "date": "2024-11-13",
+      "timestamp": 1731525720000
+    },
+    {
+      "channel": "Beta",
+      "version": "130.0.6723.35",
+      "milestone": 130,
+      "date": "2024-11-13",
+      "timestamp": 1731525720000
+    },
+    {
+      "channel": "Stable",
+      "version": "129.0.6668.18",
+      "milestone": 129,
+      "date": "2024-11-13",
+      "timestamp": 1731525720000
+    },
+    {
+      "channel": "Extended",
+      "version": "128.0.6613.117",
+      "milestone": 128,
+      "date": "2024-11-13",
+      "timestamp": 1731525720000
+    }
+  ],
+  "2024-10-15": [
+    {
+      "channel": "Dev",
+      "version": "130.0.6723.35",
+      "milestone": 130,
+      "date": "2024-10-15",
+      "timestamp": 1729024020000
+    },
+    {
+      "channel": "Beta",
+      "version": "129.0.6668.18",
+      "milestone": 129,
+      "date": "2024-10-15",
+      "timestamp": 1729024020000
+    },
+    {
+      "channel": "Stable",
+      "version": "128.0.6613.117",
+      "milestone": 128,
+      "date": "2024-10-15",
+      "timestamp": 1729024020000
+    },
+    {
+      "channel": "Extended",
+      "version": "127.0.6533.22",
+      "milestone": 127,
+      "date": "2024-10-15",
+      "timestamp": 1729024020000
+    }
+  ],
+  "2024-09-03": [
+    {
+      "channel": "Beta",
+      "version": "128.0.6613.117",
+      "milestone": 128,
+      "date": "2024-09-03",
+      "timestamp": 1725400260000
+    }
+  ],
+  "2024-08-30": [
+    {
+      "channel": "Dev",
+      "version": "129.0.6668.18",
+      "milestone": 129,
+      "date": "2024-08-30",
+      "timestamp": 1725035580000
+    },
+    {
+      "channel": "Beta",
+      "version": "128.0.6613.93",
+      "milestone": 128,
+      "date": "2024-08-30",
+      "timestamp": 1725035580000
+    },
+    {
+      "channel": "Stable",
+      "version": "127.0.6533.22",
+      "milestone": 127,
+      "date": "2024-08-30",
+      "timestamp": 1725035580000
+    },
+    {
+      "channel": "Extended",
+      "version": "126.0.6478.23",
+      "milestone": 126,
+      "date": "2024-08-30",
+      "timestamp": 1725035580000
+    }
+  ],
+  "2024-08-26": [
+    {
+      "channel": "Dev",
+      "version": "128.0.6613.93",
+      "milestone": 128,
+      "date": "2024-08-26",
+      "timestamp": 1724706960000
+    }
+  ],
+  "2024-08-07": [
+    {
+      "channel": "Dev",
+      "version": "128.0.6613.13",
+      "milestone": 128,
+      "date": "2024-08-07",
+      "timestamp": 1723071780000
+    },
+    {
+      "channel": "Beta",
+      "version": "127.0.6533.22",
+      "milestone": 127,
+      "date": "2024-08-07",
+      "timestamp": 1723071780000
+    },
+    {
+      "channel": "Stable",
+      "version": "126.0.6478.23",
+      "milestone": 126,
+      "date": "2024-08-07",
+      "timestamp": 1723071780000
+    },
+    {
+      "channel": "Extended",
+      "version": "124.0.6367.234",
+      "milestone": 124,
+      "date": "2024-08-07",
+      "timestamp": 1723071780000
+    }
+  ],
+  "2024-06-28": [
+    {
+      "channel": "Dev",
+      "version": "127.0.6533.22",
+      "milestone": 127,
+      "date": "2024-06-28",
+      "timestamp": 1719595620000
+    },
+    {
+      "channel": "Beta",
+      "version": "126.0.6478.23",
+      "milestone": 126,
+      "date": "2024-06-28",
+      "timestamp": 1719595620000
+    },
+    {
+      "channel": "Stable",
+      "version": "124.0.6367.234",
+      "milestone": 124,
+      "date": "2024-06-28",
+      "timestamp": 1719595620000
+    },
+    {
+      "channel": "Extended",
+      "version": "122.0.6261.100",
+      "milestone": 122,
+      "date": "2024-06-28",
+      "timestamp": 1719595620000
+    }
+  ],
+  "2024-06-03": [
+    {
+      "channel": "Beta",
+      "version": "124.0.6367.234",
+      "milestone": 124,
+      "date": "2024-06-03",
+      "timestamp": 1717434060000
+    },
+    {
+      "channel": "Stable",
+      "version": "122.0.6261.100",
+      "milestone": 122,
+      "date": "2024-06-03",
+      "timestamp": 1717434060000
+    },
+    {
+      "channel": "Extended",
+      "version": "121.0.6167.52",
+      "milestone": 121,
+      "date": "2024-06-03",
+      "timestamp": 1717434060000
+    }
+  ],
+  "2024-04-04": [
+    {
+      "channel": "Beta",
+      "version": "122.0.6261.100",
+      "milestone": 122,
+      "date": "2024-04-04",
+      "timestamp": 1712264040000
+    },
+    {
+      "channel": "Stable",
+      "version": "121.0.6167.52",
+      "milestone": 121,
+      "date": "2024-04-04",
+      "timestamp": 1712264040000
+    },
+    {
+      "channel": "Extended",
+      "version": "120.0.6099.224",
+      "milestone": 120,
+      "date": "2024-04-04",
+      "timestamp": 1712264040000
+    }
+  ],
+  "2024-02-21": [
+    {
+      "channel": "Stable",
+      "version": "120.0.6099.224",
+      "milestone": 120,
+      "date": "2024-02-21",
+      "timestamp": 1708542960000
+    },
+    {
+      "channel": "Extended",
+      "version": "118.0.5993.36",
+      "milestone": 118,
+      "date": "2024-02-21",
+      "timestamp": 1708542960000
+    }
+  ],
+  "2023-07-15": [
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5890.1",
+      "milestone": 117,
+      "date": "2023-07-15",
+      "timestamp": 1689407479026
+    }
+  ],
+  "2023-07-14": [
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5888.1",
+      "milestone": 117,
+      "date": "2023-07-14",
+      "timestamp": 1689325541750
+    }
+  ],
+  "2023-07-13": [
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5887.1",
+      "milestone": 117,
+      "date": "2023-07-13",
+      "timestamp": 1689277790410
+    },
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5886.1",
+      "milestone": 117,
+      "date": "2023-07-13",
+      "timestamp": 1689233547405
+    }
+  ],
+  "2023-07-12": [
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5885.1",
+      "milestone": 117,
+      "date": "2023-07-12",
+      "timestamp": 1689193060117
+    },
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5884.1",
+      "milestone": 117,
+      "date": "2023-07-12",
+      "timestamp": 1689151018724
+    }
+  ],
+  "2023-07-11": [
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5883.1",
+      "milestone": 117,
+      "date": "2023-07-11",
+      "timestamp": 1689108102391
+    },
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5882.1",
+      "milestone": 117,
+      "date": "2023-07-11",
+      "timestamp": 1689063749900
+    }
+  ],
+  "2023-07-10": [
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5881.1",
+      "milestone": 117,
+      "date": "2023-07-10",
+      "timestamp": 1689018112851
+    }
+  ],
+  "2023-07-08": [
+    {
+      "channel": "Canary_asan",
+      "version": "117.0.5879.1",
+      "milestone": 117,
+      "date": "2023-07-08",
+      "timestamp": 1688843910140
+    }
+  ]
+}
