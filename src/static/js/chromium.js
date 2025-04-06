@@ -9,6 +9,7 @@ const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 let currentViewMonth;
 let currentViewYear;
 let releasesByDateGlobal;
+let futureMilestonesGlobal = {};
 
 function generateMonth(year, month, getMilestoneInfo) {
   const container = document.createElement('div');
@@ -75,48 +76,104 @@ function generateMonth(year, month, getMilestoneInfo) {
       cell.appendChild(info);
 
       if (valid && dateString) {
+        // Get both past releases and future milestones for this date
         const releases = getMilestoneInfo(dateString);
+        const futureMilestones = futureMilestonesGlobal[dateString] || [];
         
-        if (releases && releases.length > 0) {
+        // Combine and process them
+        if ((releases && releases.length > 0) || (futureMilestones && futureMilestones.length > 0)) {
           cell.classList.add('has-milestone');
           
           const tooltip = document.createElement('div');
           tooltip.classList.add('milestone-tooltip');
           
-          // Create tooltip content with all versions organized by channel
-          const tooltipContent = releases.map(release => {
-            // Sort channels to maintain consistent order
-            const sortedChannels = [...release.channels].sort((a, b) => {
-              const order = { 'stable': 1, 'beta': 2, 'dev': 3, 'canary': 4 };
-              return (order[a.toLowerCase()] || 999) - (order[b.toLowerCase()] || 999);
+          // Collect all unique channels across all releases and future milestones
+          const uniqueChannels = new Set();
+          
+          // Track versions by channel for tooltip
+          const versionsByChannel = {
+            stable: new Set(),
+            beta: new Set(),
+            dev: new Set(),
+            canary: new Set()
+          };
+          
+          // Process past releases
+          if (releases && releases.length > 0) {
+            releases.forEach(release => {
+              release.channels.forEach(channel => {
+                const lowerChannel = channel.toLowerCase();
+                
+                // Skip extended channels and normalize canary asan to canary
+                if (lowerChannel.includes('extended')) {
+                  return;
+                }
+                
+                const normalizedChannel = lowerChannel === 'canary asan' ? 'canary' : lowerChannel;
+                
+                // Only add recognized channels
+                if (['stable', 'beta', 'dev', 'canary'].includes(normalizedChannel)) {
+                  // Add to unique channels
+                  uniqueChannels.add(normalizedChannel);
+                  
+                  // Track version info for tooltip
+                  if (versionsByChannel[normalizedChannel]) {
+                    versionsByChannel[normalizedChannel].add(`${release.version} (M${release.milestone})`);
+                  }
+                }
+              });
             });
-            
-            const channelsText = sortedChannels.join(', ');
-            return `Version ${release.version} (M${release.milestone})<br><span class="channel-list">${channelsText}</span>`;
-          }).join('<hr>');
+          }
+          
+          // Process future milestones
+          if (futureMilestones && futureMilestones.length > 0) {
+            futureMilestones.forEach(milestone => {
+              const channel = milestone.channel.toLowerCase();
+              
+              if (['stable', 'beta'].includes(channel)) {
+                // Add to unique channels
+                uniqueChannels.add(channel);
+                
+                // Add milestone to versions with special formatting to indicate it's future
+                if (versionsByChannel[channel]) {
+                  versionsByChannel[channel].add(`M${milestone.milestone} (Planned)`);
+                }
+              }
+            });
+          }
+          
+          // Create tooltip content
+          let tooltipContent = '';
+          for (const channel of ['stable', 'beta', 'dev', 'canary']) {
+            if (versionsByChannel[channel] && versionsByChannel[channel].size > 0) {
+              if (tooltipContent) tooltipContent += '<hr>';
+              const versions = [...versionsByChannel[channel]].join(', ');
+              tooltipContent += `<b>${channel.charAt(0).toUpperCase() + channel.slice(1)}</b>: ${versions}`;
+            }
+          }
           
           tooltip.innerHTML = tooltipContent;
           cell.appendChild(tooltip);
           
-          // Group all channels from all releases
-          const allChannels = new Set();
-          releases.forEach(release => {
-            release.channels.forEach(channel => {
-              allChannels.add(channel.toLowerCase());
-            });
-          });
-          
-          // Create one dot per channel type
+          // Sort channels for consistent display order
           const channelOrder = ['stable', 'beta', 'dev', 'canary'];
-          const sortedChannels = [...allChannels].sort((a, b) => {
+          const sortedChannels = [...uniqueChannels].sort((a, b) => {
             const orderA = channelOrder.indexOf(a);
             const orderB = channelOrder.indexOf(b);
             return orderA - orderB;
           });
           
+          // Create one dot per channel type
           sortedChannels.forEach(channel => {
             const indicator = document.createElement('span');
             indicator.classList.add('channel-dot');
+            
+            // Check if this is a future milestone
+            const hasFutureMilestone = futureMilestones.some(m => m.channel.toLowerCase() === channel);
+            if (hasFutureMilestone) {
+              indicator.classList.add('future-milestone');
+            }
+            
             indicator.setAttribute('data-channel', channel);
             
             switch(channel) {
@@ -181,18 +238,15 @@ function updateCurrentPeriodText(element) {
     if (!element) return;
   }
   
-  const prevMonth = currentViewMonth - 1 < 1 ? 12 : currentViewMonth - 1;
-  const prevYear = currentViewMonth - 1 < 1 ? currentViewYear - 1 : currentViewYear;
-  
   const nextMonth = currentViewMonth + 1 > 12 ? 1 : currentViewMonth + 1;
   const nextYear = currentViewMonth + 1 > 12 ? currentViewYear + 1 : currentViewYear;
   
-  element.textContent = `${months[prevMonth-1]} ${prevYear} - ${months[nextMonth-1]} ${nextYear}`;
+  element.textContent = `${months[currentViewMonth-1]} ${currentViewYear} - ${months[nextMonth-1]} ${nextYear}`;
 }
 
 // Navigate to previous 3 months
 function navigatePrevious() {
-  currentViewMonth -= 3;
+  currentViewMonth -= 1;
   if (currentViewMonth < 1) {
     currentViewMonth += 12;
     currentViewYear--;
@@ -202,7 +256,7 @@ function navigatePrevious() {
 
 // Navigate to next 3 months
 function navigateNext() {
-  currentViewMonth += 3;
+  currentViewMonth += 1;
   if (currentViewMonth > 12) {
     currentViewMonth -= 12;
     currentViewYear++;
@@ -215,14 +269,6 @@ function renderCalendar() {
   const calendarSection = document.querySelector('.chromium-calendar');
   calendarSection.innerHTML = '';
   
-  // Previous month
-  let prevMonth = currentViewMonth - 1;
-  let prevYear = currentViewYear;
-  if (prevMonth < 1) {
-    prevMonth += 12;
-    prevYear--;
-  }
-  
   // Next month
   let nextMonth = currentViewMonth + 1;
   let nextYear = currentViewYear;
@@ -231,13 +277,7 @@ function renderCalendar() {
     nextYear++;
   }
   
-  // Add the 3 months
-  calendarSection.appendChild(
-    generateMonth(prevYear, prevMonth, (dateString) => {
-      return releasesByDateGlobal[dateString] || [];
-    })
-  );
-  
+  // Add the 2 months (current and next)
   calendarSection.appendChild(
     generateMonth(currentViewYear, currentViewMonth, (dateString) => {
       return releasesByDateGlobal[dateString] || [];
@@ -254,6 +294,91 @@ function renderCalendar() {
   updateCurrentPeriodText();
 }
 
+// Fetch future milestone data from Chromium dashboard
+async function fetchFutureMilestones() {
+  try {
+    // First fetch the latest milestone
+    const response = await fetch('https://chromiumdash.appspot.com/fetch_milestone_schedule');
+    if (!response.ok) {
+      throw new Error(`Failed to fetch latest milestone: ${response.statusText}`);
+    }
+    
+    const data = await response.json();
+    
+    if (!data.mstones || data.mstones.length === 0) {
+      throw new Error('No milestone data received');
+    }
+    
+    // Get the current milestone number
+    const currentMstone = data.mstones[0].mstone;
+    console.log(`Current milestone: ${currentMstone}`);
+    
+    // Process the milestones data into a date-indexed format
+    const milestonesObj = {};
+    
+    // Add the current milestone data
+    processMilestoneData(data.mstones[0], milestonesObj);
+    
+    // Fetch and process the next 10 milestones
+    const nextMilestones = [];
+    for (let i = 1; i <= 10; i++) {
+      const nextMstone = currentMstone + i;
+      console.log(`Fetching milestone: ${nextMstone}`);
+      
+      try {
+        const nextMilestoneResponse = await fetch(`https://chromiumdash.appspot.com/fetch_milestone_schedule?mstone=${nextMstone}`);
+        if (nextMilestoneResponse.ok) {
+          const nextMilestoneData = await nextMilestoneResponse.json();
+          if (nextMilestoneData.mstones && nextMilestoneData.mstones.length > 0) {
+            processMilestoneData(nextMilestoneData.mstones[0], milestonesObj);
+            nextMilestones.push(nextMilestoneData.mstones[0]);
+          }
+        }
+      } catch (err) {
+        console.log(`Error fetching milestone ${nextMstone}:`, err);
+        // Continue with other milestones even if one fails
+      }
+    }
+    
+    console.log(`Fetched ${nextMilestones.length} future milestones`);
+    return milestonesObj;
+  } catch (error) {
+    console.error('Error fetching future milestones:', error);
+    return {};
+  }
+}
+
+// Helper function to process milestone data
+function processMilestoneData(milestone, milestonesObj) {
+  // Add earliest beta date
+  if (milestone.earliest_beta) {
+    const betaDate = milestone.earliest_beta.split('T')[0]; // Get just the date part
+    if (!milestonesObj[betaDate]) {
+      milestonesObj[betaDate] = [];
+    }
+    milestonesObj[betaDate].push({
+      milestone: milestone.mstone,
+      channel: 'beta',
+      version: `M${milestone.mstone}`,
+      isFutureMilestone: true
+    });
+  }
+  
+  // Add stable date
+  if (milestone.stable_date) {
+    const stableDate = milestone.stable_date.split('T')[0]; // Get just the date part
+    if (!milestonesObj[stableDate]) {
+      milestonesObj[stableDate] = [];
+    }
+    milestonesObj[stableDate].push({
+      milestone: milestone.mstone,
+      channel: 'stable',
+      version: `M${milestone.mstone}`,
+      isFutureMilestone: true
+    });
+  }
+}
+
 async function main() {
   try {
     // Use our API endpoint instead of fetching directly from Chromium
@@ -263,6 +388,9 @@ async function main() {
     }
     
     releasesByDateGlobal = await response.json();
+    
+    // Fetch future milestones
+    futureMilestonesGlobal = await fetchFutureMilestones();
     
     const calendarContainer = document.querySelector('.chromium-calendar').parentElement;
     
